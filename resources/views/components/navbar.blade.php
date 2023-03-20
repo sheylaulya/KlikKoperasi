@@ -13,23 +13,35 @@
     <div class="list-item" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#">Makanan</a>
+          <form action="{{ route('filter') }}" method="GET">
+            <input type="text" hidden name="filter" value="makanan">
+            <button class="nav-link" style="background-color: transparent; border: none;">Makanan</button>
+          </form>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Minuman</a>
+          <form action="{{ route('filter') }}" method="GET">
+            <input type="text" hidden name="filter" value="Minuman">
+            <button class="nav-link" style="background-color: transparent; border: none;">Minuman</button>
+          </form>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Es Krim</a>
+          <form action="{{ route('filter') }}" method="GET">
+            <input type="text" hidden name="filter" value="Es krim">
+            <button class="nav-link" style="background-color: transparent; border: none;">Es krim</button>
+          </form>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Buatan Rumahan</a>
+          <form action="{{ route('filter') }}" method="GET">
+            <input type="text" hidden name="filter" value="bikinan Rumahan">
+            <button class="nav-link" style="background-color: transparent; border: none;">Buatan Rumahan</button>
+          </form>
         </li>
       </ul>
     </div>
     <div class="search-bar" >
       <form class="d-flex" role="search" method="get" action="{{ route('search') }}">
         <input class="form-control me-2 search-bar" type="text" placeholder="Temukan yang kamu mau" value="{{ old('search') }}"
-          aria-label="Search" style="border-radius: 15px; border: 1px solid rgb(103, 103, 103); width: 230px" name="search">
+          aria-label="Search" style="border-radius: 15px; border: 1px solid rgb(103, 103, 103); width: 230px; font-size: 14px" name="search">
       </form>
       {{-- <form class="form d-flex" method="get" action="{{ route('search') }}">
             <input type="text" name="search" class="form-control me-2 search-bar" id="search" placeholder="Masukkan keyword">

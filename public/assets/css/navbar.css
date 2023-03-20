@@ -5,8 +5,13 @@ body {
 }
 header{
   position: fixed;
-
+  z-index: 99999;
 }
+
+.active{
+  background-color: #000;
+}
+
 nav{
   width: 100vw;
   background-color: white;

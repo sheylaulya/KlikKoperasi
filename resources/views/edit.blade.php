@@ -29,70 +29,58 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Name:</strong>
-                    <input type="text" name="name" value="{{ $product->name }}" class="form-control" placeholder="Name">
+                    <input value="{{ $product->nama }}" type="text" name="nama" class="form-control" placeholder="nama">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Image:</strong>
-                    <input type="file" name="image" class="form-control" placeholder="image">
-                    {{-- <img src="/images/{{ $product->image }}" width="300px"> --}}
+                    <input value="{{ $product->image }}" type="file" name="image" class="form-control" placeholder="image">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Author:</strong>
-                    <input type="text" name="author" value="{{ $product->author }}" class="form-control"
-                        placeholder="author">
+                    <strong>harga:</strong>
+                    <input value="{{ $product->harga }}" type="text" name="harga" class="form-control" placeholder="harga">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>publish:</strong>
-                    <input type="text" name="date" value="{{ $product->publish }}" class="form-control"
-                        placeholder="publish">
+                    <strong>stok:</strong>
+                    <input value="{{ $product->stok }}" type="number" name="stok" class="form-control" placeholder="stok">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>publisher:</strong>
-                    <input type="text" name="publisher" value="{{ $product->publisher }}" class="form-control"
-                        placeholder="publisher">
+                    <strong>kadaluarsa:</strong>
+                    <input value="{{ $product->kadaluarsa }}" type="date" name="kadaluarsa" class="form-control" placeholder="kadaluarsa">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>genre:</strong>
-                    <input type="text" name="genre" class="form-control" value="{{ $product->genre }}" placeholder="genre">
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-12 col-md-12">
-              <div class="form-group">
-                  <strong>page:</strong>
-                  <input type="number" name="page" value="{{ $product->page }}" class="form-control"
-                      placeholder="page">
+                    <strong>berat satuan:</strong>
+                    <input value="{{ $product->berat_satuan }}" type="text" name="berat_satuan" class="form-control" placeholder="berat_satuan">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>price:</strong>
-                    <input type="number" name="price" value="{{ $product->price }}"  class="form-control" placeholder="price">
+                    <strong>Tipe :</strong>
+                    <input value="{{ $product->tipe }}" type="text" name="tipe" class="form-control" placeholder="tipe">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Detail:</strong>
-                    <textarea class="form-control" style="height:150px" name="detail"
-                        placeholder="Detail">{{ $product->detail }}</textarea>
+                    <strong>Komposisi :</strong>
+                    <input value="{{ $product->komposisi }}" type="text" name="komposisi" class="form-control" placeholder="komposisi">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>story:</strong>
-                    <input type="file" name="file" class="form-control">
+                    <strong>deskripsi :</strong>
+                    <textarea class="form-control" style="height:150px" name="deskripsi" placeholder="deskripsi ">{{ $product->deskripsi }}</textarea>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12 mt-5">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-3">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </div>

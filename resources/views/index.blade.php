@@ -160,9 +160,7 @@
                         <th>image</th>
                         <th>harga</th>
                         <th>stok</th>
-                        <th>berat</th>
-                        <th>komposisi</th>
-                        <th>deskripsi</th>
+                        <th>tipe</th>
                         <th>kadaluarsa</th>
                         <th>Actions</th>
                     </tr>
@@ -173,7 +171,7 @@
                         <td>{{++$i}}</td>
                         <td>
                             <i class="fab fa-bootstrap fa-lg text-primary me-3"></i>
-                            <strong>{{ $product->name }}</strong>
+                            <strong>{{ $product->nama }}</strong>
                         </td>
                         <td>
                             <div class="container-book">
@@ -222,9 +220,7 @@
                             {{ $product->harga }}
                         </td>
                         <td>{{ $product->stok }}</td>
-                        <td>{{ $product->berat_satuan }}</td>
-                        <td>{{ $product->komposisi }}</td>
-                        <td>{{ $product->deskripsi }}</td>
+                        <td>{{ $product->tipe }}</td>
                         <td><span class="badge bg-label-warning me-1">{{ $product->kadaluarsa }}</span></td>
                         <td>
                             <div class="dropdown" style="position: absolute; margin: -15px 20px 0px">

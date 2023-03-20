@@ -18,9 +18,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('user.landingpage');
-});
+// Route::get('/', function () {
+//     return view('user.landingpage');
+// });
+
+Route::get('/', [ProductController::class, 'landingpage']);
 
 Route::get('/product', [ProductController::class, 'lpindex']);
 // ->middleware(['auth', 'verified'])->name('dashboard');
@@ -53,3 +55,5 @@ Route::get('/exportexcel', [ProductController::class, 'exportexcel']);
 Route::post('/importexcel', [ProductController::class, 'importexcel']);
 
 Route::get('/search', [ProductController::class, 'search'])->name('search');
+
+Route::get('/sort', [ProductController::class, 'filter'])->name('filter');

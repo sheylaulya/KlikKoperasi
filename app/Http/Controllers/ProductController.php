@@ -114,7 +114,14 @@ class ProductController extends Controller
     {
         $request->validate([
             'nama' => 'required',
-            'detail' => 'required',
+            'harga' => 'required',
+            'tipe' => 'required',
+            'stok' => 'required',
+            'kadaluarsa' => 'required',
+            'komposisi' => 'required',
+            'deskripsi' => 'required',
+            'berat_satuan' => 'required',
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
   
         $input = $request->all();
@@ -163,6 +170,14 @@ class ProductController extends Controller
         return view('user.products',compact('products'));
     }
 
+    public function landingpage()
+    {
+        $products = Product::all();
+    
+        return view('user.landingpage',compact('products'));
+    }
+
+
     public function lpshow(Product $product, $id)
     {
         $product = Product::findOrFail($id);
@@ -187,6 +202,14 @@ class ProductController extends Controller
     {
         $keyword = $request->search;
         $products = Product::where('nama', 'like', "%" . $keyword . "%")->paginate(5);
+        return view('user.products', compact('products'))->with('i', (request()->input('page', 1) - 1) * 5);
+    }
+
+    public function filter(Request $request)
+    {
+        $fil = $request->filter;
+        // dd($fil);
+        $products = Product::where('tipe', 'like', "%" . $fil . "%")->paginate(5);
         return view('user.products', compact('products'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
     

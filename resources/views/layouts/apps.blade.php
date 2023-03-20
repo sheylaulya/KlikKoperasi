@@ -8,6 +8,7 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="{{ asset('assets/css/landingpage.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/css/product-not-found.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/navbar.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/loader.css') }}">
@@ -39,6 +40,10 @@
     {{-- iconify --}}
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 
+    {{-- AOS --}}
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
   <title>KliKoperasi</title>
 </head>
 
@@ -61,7 +66,10 @@ integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CX
 </script>
 <script src="{{ asset('assets/js/products.js')}}"></script>
 <script src="{{ asset('assets/script/products.js')}}"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>

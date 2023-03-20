@@ -19,7 +19,25 @@
         </h1>
     </div>
     <div class="product">
-       
+        @if ($products->count() <= 0)
+        <div class="content-not-found">
+            <div class="context">
+              <img src="{{ asset('assets/image/not-found.png') }}" alt="">
+              <div class="right-context">
+                <div class="top">
+                  <h4>Oops, produk tidak ditemukan</h4>
+                  <p>Coba kata kunci lain atau silahkan kembali</p>
+                </div>
+                <label for="search-web">
+                  <a href="/">
+                    <button>Change Keyword</button>
+                </a>
+                </label>
+              </div>
+            </div>
+          </div>
+        @else
+            
         @foreach ($products as $product)
         <a href="{{ route('lp.show',$product->id) }}">
             <div class="p-card">
@@ -30,13 +48,15 @@
                 <div class="desc">
                     <p>{{ $product->nama }}</p>
                     <div class="l-row">
-                        <p>Rp. {{ $product->harga }}</p>
+                        <p>Rp{{number_format($product->harga,0,',','.')}}</p>
                         <p>Tersisa {{$product->stok}}</p>
                     </div>
                 </div>
             </div>
         </a>
         @endforeach
+        
+        @endif
     </div>
     
     {{-- <div class="pagination">

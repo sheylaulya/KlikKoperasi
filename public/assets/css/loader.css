@@ -10,6 +10,7 @@
     align-items: center;
     background-color: white;
     transition: opacity 0.75s, visibility 0.75s;
+    z-index: 999999999999999999999999999999;
   }
   
   .loader-hidden{

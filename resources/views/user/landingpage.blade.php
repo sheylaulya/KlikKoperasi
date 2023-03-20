@@ -41,7 +41,7 @@
     </div>
 
     <div class="content">
-        <div class="company-profile">
+        <div class="company-profile" data-aos="fade-up">
             <div class="img-company">
                 <img src="{{ asset('assets/image/koprasi.png')}}" alt="">
             </div>
@@ -61,7 +61,7 @@
             </div>
         </div>
 
-        <div class="user-experience">
+        <div class="user-experience" data-aos="fade-up">
             <div class="top-experience">
                 <div class="left-experience">
                     <h1>Kenyamanan Pelanggan adalah yang Utama Bagi Kami</h1>
@@ -74,7 +74,7 @@
             </div>
             <div class="bot-experience">
                 <div class="experience-wrap">
-                    <div class="card-exp">
+                    <div class="card-exp" data-aos="zoom-in-right">
                         <div class="icon">
                             <img src="{{ asset('assets/image/icon.png')}}" alt="">
                         </div>
@@ -83,7 +83,7 @@
                             <p>Kami menjual produk produk yang fresh dan baru</p>
                         </div>
                     </div>
-                    <div class="card-exp">
+                    <div class="card-exp" data-aos="zoom-in-right">
                         <div class="icon">
                             <img src="{{ asset('assets/image/enak.png')}}" alt="">
                         </div>
@@ -92,7 +92,7 @@
                             <p>Kami menjual produk produk yang enak !</p>
                         </div>
                     </div>
-                    <div class="card-exp">
+                    <div class="card-exp" data-aos="zoom-in-right">
                         <div class="icon">
                             <img src="{{ asset('assets/image/halal.png')}}" style="width: 80px" alt="">
                         </div>
@@ -106,7 +106,7 @@
         </div>
     </div>
 
-    <div class="faqs">
+    <div class="faqs" data-aos="fade-up">
         <div class="header">
             <h1>Pertanyaan Yang Banyak Ditanyakan</h1>
             <p>Kami telah menampung pertanyaan pertanyaan yang sering ditayakan pelanggan, dan begini jawabannya</p>
