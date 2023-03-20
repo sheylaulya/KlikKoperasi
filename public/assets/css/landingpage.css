@@ -1,25 +1,15 @@
-*{
-  padding: 50px;
-}
-
-.product a{
-  text-decoration: none;
-}
 .hero {
   width: 100%;
   align-items: center;
   display: flex;
   justify-content: center;
-  margin-top: -60px;
 }
 
 .left-hero,
 .right-hero {
   width: 50%;
 }
-.left-hero{
-  margin-left: 50px;
-}
+
 .left-hero h1 {
   font-family: 'Poppins';
   font-style: normal;

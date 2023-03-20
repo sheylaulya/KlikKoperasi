@@ -1,5 +1,4 @@
-<header>
-  <nav class="navbar navbar-expand-lg p-3">
+<nav class="navbar navbar-expand-lg p-3">
     <div class="container-fluid">
       <a class="navbar-brand d-flex align-items-center justify-content-evenly" href="#">
         <img src="{{ asset('assets/image/Logo TB Teks Putih 1.png')}}" alt="">
@@ -33,4 +32,3 @@
       </div>
     </div>
   </nav>
-</header>
