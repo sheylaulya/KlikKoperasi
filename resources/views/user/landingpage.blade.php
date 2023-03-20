@@ -81,20 +81,20 @@
           </div>
           <div class="card-exp">
             <div class="icon">
-              <img src="{{ asset('assets/image/icon.png')}}" alt="">
+              <img src="{{ asset('assets/image/enak.png')}}" alt="">
             </div>
             <div class="text">
-              <h1>Produk Baru!</h1>
-              <p>Kami menjual produk produk yang fresh dan baru</p>
+              <h1>Produk Enak!</h1>
+              <p>Kami menjual produk produk yang enak !</p>
             </div>
           </div>
           <div class="card-exp">
             <div class="icon">
-              <img src="{{ asset('assets/image/icon.png')}}" alt="">
+              <img src="{{ asset('assets/image/halal.png')}}" style="width: 80px" alt="">
             </div>
             <div class="text">
-              <h1>Produk Baru!</h1>
-              <p>Kami menjual produk produk yang fresh dan baru</p>
+              <h1>Produk Hala!</h1>
+              <p>Kami menjual produk produk yang sudah terjamin kehalalannya !</p>
             </div>
           </div>
         </div>
