@@ -4,6 +4,14 @@ body {
   padding: 0;
 }
 
+header{
+  position: fixed;
+}
+
+nav{
+  background-color: white;
+  width: 190vh;
+}
 .navbar-brand img {
   width: 45px;
 }

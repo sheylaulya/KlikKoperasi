@@ -1,0 +1,180 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.first-r a{
+    text-decoration: none;
+}
+
+.container{
+    padding-top: 100px;
+}
+.first-r {
+    display: flex;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 10px;
+    font-weight: 500;
+    color: #1E1E1E;
+}
+.back p{
+    margin-top: 15px;
+}
+
+.first-r h1 {
+    display: flex;
+    margin-left: 445px;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.product{
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.p-card{
+    width: 230px;
+    height: 280px;
+    border: 0.3px solid #1E1E1E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+.top-r{
+    padding: 1px 10px;
+    border: 0.3px solid #1E1E1E;
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    margin: -20px 0px 15px ;
+    background-color: white;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #1E1E1E;
+}
+.p-card img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.desc{
+    margin-top: 10px;
+}
+.l-row{
+    display: flex;
+    margin-top: -15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.desc p:first-child{
+    font-weight: 600;
+    color: #1E1E1E;
+
+}
+.l-row p:last-child{
+    font-size: 13px;
+    font-weight: 300px;
+    opacity: 0.8;
+}
+
+/* Pagination */
+.pagination {
+    display: inline-block;
+    position: relative;
+    left:43vw;
+    top: 30vh;
+}
+
+.index {
+    cursor: pointer;
+    display: inline;
+    margin-right: 30px;
+    padding: 5px;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+.index:last-child {
+    margin: 0;
+}
+
+svg {
+    left: -13px;
+    position: absolute;
+    top: -11px;
+    transition: transform 500ms;
+    width: 46px;
+}
+
+path {
+    fill: none;
+    stroke: #1f1f1f;
+    opacity: 0.7;
+    stroke-dasharray: 150 150;
+    stroke-width: 15;
+}
+
+.pagination.open:not(.flip) path {
+    animation: OpenRight 500ms;
+}
+
+.pagination.open.flip path {
+    animation: OpenLeft 500ms;
+}
+
+.pagination.i1 svg {
+    transform: translateX(0);
+}
+
+.pagination.i2 svg {
+    transform: translateX(50px);
+}
+
+.pagination.i3 svg {
+    transform: translateX(102px);
+}
+
+
+
+@keyframes OpenRight {
+    25% {
+        stroke-dasharray: 100 150;
+    }
+
+    60% {
+        stroke-dasharray: 100 150;
+    }
+
+    100% {
+        stroke-dasharray: 150 150;
+    }
+}
+
+@keyframes OpenLeft {
+    25% {
+        stroke-dashoffset: -50px;
+    }
+
+    60% {
+        stroke-dashoffset: -50px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+footer{
+    display: none;
+}

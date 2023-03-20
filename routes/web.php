@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('landingpage');
 });
+
+Route::get('/products', function () {
+    return view('products');
+});
+
+Route::get('/detail', function () {
+    return view('detail');
+});
+
+

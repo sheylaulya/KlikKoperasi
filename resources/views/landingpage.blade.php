@@ -6,7 +6,9 @@
     <div class="left-hero">
       <h1>Klik Koperasi,<br> Semua ada</h1>
       <p>Temukan Jajanan Murah, Enak dan Sehat</p>
-      <button class="btn-jajan">Jajan Sekarang!</button>
+      <a href="/products">
+        <button class="btn-jajan">Jajan Sekarang!</button>
+      </a>
     </div>
     <div class="right-hero mt-5">
       <div class="wrapper">

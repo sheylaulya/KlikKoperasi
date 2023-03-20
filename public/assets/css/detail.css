@@ -1,0 +1,85 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    color: #1E1E1E;
+}
+
+.left-r a{
+    text-decoration: none;
+}
+
+.containers {
+    padding: 20px 40px;
+    display: flex;
+    padding-top: 80px;
+}
+
+.left-r{
+    display: flex;
+    flex-direction: column;
+    border-right: #1E1E1E 1px solid;
+    padding-right: 50px;
+    margin-top: 10px;
+    height: 80vh;
+    gap: 20px;
+}
+.back {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 10px;
+    font-weight: 500;
+    color: #1E1E1E;
+}
+.left-r img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.right-r{
+    padding-left: 50px;
+    padding-top: 40px;
+    width: 100%;
+}
+.first-row{
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+    border-bottom: 1px solid #1E1E1E;
+    padding-bottom: 15px;
+    margin-bottom: 35px;
+}
+.first-row h1{
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.first-row h2{
+    font-weight: 600;
+}
+
+.sec-r{
+    margin-top: 10px;
+    line-height: 10px;
+    font-weight: 550;
+
+}
+.tgl-expired, .weight, .stock{
+    display: flex;
+}
+
+.tgl-expired{
+    gap: 100px;
+}
+
+.weight{
+    gap: 158px;
+}
+
+.stock{
+    gap: 228px;
+}
+.third-r p:first-child{
+    font-weight: 550;
+}
