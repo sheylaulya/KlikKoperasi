@@ -30,6 +30,11 @@
     font-weight: 500;
     color: #1E1E1E;
 }
+
+.back p{
+    margin-top: 15px;
+}
+
 .left-r img{
     width: 500px;
     height: 500px;

@@ -8,7 +8,7 @@
 <div class="containers">
 
     <div class="left-r">
-        <a href="/products">
+        <a href="/product">
             <div class="back">
                 <iconify-icon icon="material-symbols:arrow-back-rounded"></iconify-icon>
                 <p>Kembali</p>

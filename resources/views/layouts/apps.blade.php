@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="{{ asset('assets/css/landingpage.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/navbar.css') }}">
   <link rel="stylesheet" href="{{ asset('assets/css/footer.css') }}">
+  <link rel="stylesheet" href="{{ asset('assets/css/loader.css') }}">
+
 
   @yield('css')
 
@@ -46,10 +48,20 @@
   @include('components.navbar')
   @yield('content')
   @include('components.footer')
-  
+  <div class="loader" id="loader">
+    <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
+      <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
+      <circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round"></circle>
+      <circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+      <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20" stroke-dasharray="0 440" stroke-linecap="round"></circle>
+    </svg>
+  </div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
 </script>
+<script src="{{ asset('assets/js/products.js')}}"></script>
+<script src="{{ asset('assets/script/products.js')}}"></script>
 
 </body>
 
