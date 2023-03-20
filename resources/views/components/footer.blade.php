@@ -42,7 +42,7 @@
       </div>
 
       <div class="logo-copyright">
-        <img src="image/Logo TB Teks Putih 1.png" alt="SMK Taruna Bhakti" loading='lazy'>
+        <img src="{{asset('assets/image/logoTb.png')}}" alt="SMK Taruna Bhakti" loading='lazy'>
         <p>Copyright ©2022 SMK Taruna Bhakti </p>
       </div>
     </div>

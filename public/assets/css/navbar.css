@@ -3,7 +3,13 @@ body {
   margin: 0;
   padding: 0;
 }
-
+header{
+  position: fixed;
+}
+nav{
+  width: 100vw;
+  background-color: white;
+}
 .navbar-brand img {
   width: 45px;
 }

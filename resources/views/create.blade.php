@@ -28,7 +28,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Name:</strong>
-                    <input type="text" name="name" class="form-control" placeholder="nama">
+                    <input type="text" name="nama" class="form-control" placeholder="nama">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
@@ -59,6 +59,12 @@
                 <div class="form-group">
                     <strong>berat satuan:</strong>
                     <input type="text" name="berat_satuan" class="form-control" placeholder="berat_satuan">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Tipe :</strong>
+                    <input type="text" name="tipe" class="form-control" placeholder="tipe">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">

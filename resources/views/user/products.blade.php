@@ -23,11 +23,11 @@
         <a href="/detail">
             <div class="p-card">
                 <div class="top-r">
-                    <p>Makanan</p>
+                    <p>{{ $product->tipe}}</p>
                 </div>
                 <img src="/images/{{ $product->image }}" alt="">
                 <div class="desc">
-                    <p>{{ $product->name }}</p>
+                    <p>{{ $product->nama }}</p>
                     <div class="l-row">
                         <p>Rp. {{ $product->harga }}</p>
                         <p>Terjual 12</p>
