@@ -23,6 +23,7 @@ return new class extends Migration
             $table->string('berat_satuan');
             $table->text('komposisi');
             $table->text('deskripsi');
+            $table->string('tipe');
             $table->timestamps();
         });
     }
