@@ -3,6 +3,7 @@
 
 }
 
+
 .container{
   padding-top: 40px;
 }
@@ -285,6 +286,7 @@
   font-size: 14px;
   line-height: 21px;
 }
+/* FAQ */
 
 .faqs {
   margin-top: 120px;
@@ -312,31 +314,63 @@
   color: rgba(0, 0, 0, 0.7);
 }
 
-.wrap-faqs {
-  margin-top: 50px;
+
+
+.wrapper {
+  width: 90%;
 }
 
-.card-faqs {
-  width: 100%;
-  height: 70px;
-  border-radius: 10px;
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 4px 0px 4px rgba(0, 0, 0, 0.25);
+.containers {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px 0 rgb(0,0,0,0.25);
+  margin: 20px 0;
 }
 
-.card-faqs p{
-  font-family: 'Poppins';
-  font-style: normal;
+#containers2{
+margin-top: -10px;
+}
+
+
+.question {
+  font-size: 1.2rem;
   font-weight: 600;
-  font-size: 20px;
-  line-height: 38px;
+  padding: 20px 80px 20px 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-.btn-more {
-  background-color: transparent;
-  border: none;
-  font-size: 30px;
+.question::after {
+  content: "\002B";
+  font-size: 2.2rem;
+  position: absolute;
+  right: 20px;
+  transition: 0.2s;
 }
 
+.question.active::after {
+  transform: rotate(45deg);
+}
+
+.answercont {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.answer {
+  padding: 0 20px 20px;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 790px){
+  html {
+    font-size: 14px;
+  }
+  .wrapper {
+  width: 80%;
+}
+}

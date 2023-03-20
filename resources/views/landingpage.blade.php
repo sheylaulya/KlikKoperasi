@@ -108,10 +108,11 @@
       <p>Kami telah menampung pertanyaan pertanyaan yang sering ditayakan pelanggan, dan begini jawabannya</p>
     </div>
     <div class="wrap-faqs">
-      <div class="card-faqs">
+      {{-- <div class="card-faqs">
         <p>Min ko harga snacknya mahal mahal sih?</p>
         <button class="btn-more">+</button>
-      </div>  
+      </div>   --}}
+      
     </div>
   </div>
 </div>

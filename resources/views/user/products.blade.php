@@ -19,6 +19,7 @@
         </h1>
     </div>
     <div class="product">
+       
         @foreach ($products as $product)
         <a href="{{ route('lp.show',$product->id) }}">
             <div class="p-card">
@@ -30,7 +31,7 @@
                     <p>{{ $product->nama }}</p>
                     <div class="l-row">
                         <p>Rp. {{ $product->harga }}</p>
-                        <p>Terjual 12</p>
+                        <p>Tersisa {{$product->stok}}</p>
                     </div>
                 </div>
             </div>

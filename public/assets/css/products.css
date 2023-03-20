@@ -2,6 +2,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .first-r a, .product a{
     text-decoration: none;
 }
@@ -35,6 +39,7 @@
 
 .product{
     margin-top: 40px;
+    margin-bottom: 50px;
     display: flex;
     flex-wrap: wrap;
     width: 105%;
@@ -71,9 +76,9 @@
   }
 
 .top-r{
-    padding: 1px 10px;
+    padding: 5px 10px;
     border: 0.3px solid #1E1E1E;
-    width: 120px;
+    width: 150px;
     height: 30px;
     display: flex;
     justify-content: center;
@@ -81,6 +86,7 @@
     background-color: white;
     border-radius: 10px;
     font-weight: 600;
+    font-size: 14px;
     color: #1E1E1E;
 }
 .p-card img{
@@ -115,6 +121,7 @@
     opacity: 0.5;
     color: #1E1E1E;
 }
+
 
 
 footer{
