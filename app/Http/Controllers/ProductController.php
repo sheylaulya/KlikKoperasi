@@ -166,7 +166,7 @@ class ProductController extends Controller
     public function lpshow(Product $product, $id)
     {
         $product = Product::findOrFail($id);
-        return view('user.book-detail',compact('product'));
+        return view('user.detail',compact('product'));
     }
 
     public function exportexcel(){

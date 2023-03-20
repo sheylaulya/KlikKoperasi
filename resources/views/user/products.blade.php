@@ -20,7 +20,7 @@
     </div>
     <div class="product">
         @foreach ($products as $product)
-        <a href="/detail">
+        <a href="{{ route('lp.show',$product->id) }}">
             <div class="p-card">
                 <div class="top-r">
                     <p>{{ $product->tipe}}</p>
