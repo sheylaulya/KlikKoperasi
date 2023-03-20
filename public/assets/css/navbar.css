@@ -1,0 +1,55 @@
+*,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-brand img {
+  width: 45px;
+}
+
+.navbar-brand {
+  box-shadow: 0px 1px 7px 0px #252525;
+  border-radius: 100px;
+  width: 190px;
+  padding: 5px 10px;
+}
+
+.navbar-brand p {
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.list-item {
+  transform: translateX(70px);
+  margin: 0px auto;
+}
+
+.nav-link {
+  margin: 0px 5px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: black;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.user img {
+  width: 35px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.user p {
+  font-family: 'Poppins';
+  font-size: 14px;
+  margin: 0;
+}
