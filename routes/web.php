@@ -49,6 +49,7 @@ Route::get('/product/{id}', [ProductController::class, 'lpshow'])->name('lp.show
 Route::get('/favorite/add/{id}', [FavoriteController::class, 'add']);
 
 Route::get('/exportexcel', [ProductController::class, 'exportexcel']);
+
 Route::post('/importexcel', [ProductController::class, 'importexcel']);
 
-
+Route::get('/search', [ProductController::class, 'search'])->name('search');

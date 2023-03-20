@@ -183,5 +183,11 @@ class ProductController extends Controller
         return redirect()->back();
     }
 
+    public function search(Request $request)
+    {
+        $keyword = $request->search;
+        $products = Product::where('nama', 'like', "%" . $keyword . "%")->paginate(5);
+        return view('user.products', compact('products'))->with('i', (request()->input('page', 1) - 1) * 5);
+    }
     
 }

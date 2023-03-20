@@ -27,10 +27,13 @@
       </ul>
     </div>
     <div class="search-bar" >
-      <form class="d-flex" role="search">
-        <input class="form-control me-2 search-bar" type="search" placeholder="Temukan yang kamu mau"
-          aria-label="Search" style="border-radius: 15px; border: 1px solid rgb(103, 103, 103); width: 230px">
+      <form class="d-flex" role="search" method="get" action="{{ route('search') }}">
+        <input class="form-control me-2 search-bar" type="text" placeholder="Temukan yang kamu mau" value="{{ old('search') }}"
+          aria-label="Search" style="border-radius: 15px; border: 1px solid rgb(103, 103, 103); width: 230px" name="search">
       </form>
+      {{-- <form class="form d-flex" method="get" action="{{ route('search') }}">
+            <input type="text" name="search" class="form-control me-2 search-bar" id="search" placeholder="Masukkan keyword">
+    </form> --}}
     </div>
   </div>
 </nav>
