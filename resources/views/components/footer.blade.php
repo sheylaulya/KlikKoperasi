@@ -51,22 +51,22 @@
       <ul>
         <li>
           <a target="_blank" href="https://www.instagram.com/smktarunabhakti.depok/">
-            <img src="image/instagram.png" alt="">
+            <img src="{{ asset('assets/image/instagram.png')}}" alt="">
           </a>
         </li>
         <li>
           <a target="_blank" href="https://www.youtube.com/c/SMKTarunaBhaktiDepok">
-            <img src="image/youtube.png" alt="">
+            <img src="{{ asset('assets/image/youtube.png')}}" alt="">
           </a>
         </li>
         <li>
           <a target="_blank" href="https://www.facebook.com/smktarunabhaktidepok">
-            <img src="image/facebook.png" alt="">
+            <img src="{{ asset('assets/image/facebook.png')}}" alt="">
           </a></li>
 
         <li>
           <a target="_blank" href="https://mail.google.com/mail/u/0/?hl=en#inbox">
-            <img src="image/email.png" alt="">
+            <img src="{{ asset('assets/image/email.png')}}" alt="">
           </a>
         </li>
       </ul>

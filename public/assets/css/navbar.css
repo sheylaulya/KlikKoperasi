@@ -8,9 +8,6 @@ header{
   z-index: 99999;
 }
 
-.active{
-  background-color: #000;
-}
 
 nav{
   width: 100vw;
@@ -34,7 +31,7 @@ nav{
 }
 
 .list-item {
-  transform: translateX(70px);
+  transform: translateX(50px);
   margin: 0px auto;
 }
 
